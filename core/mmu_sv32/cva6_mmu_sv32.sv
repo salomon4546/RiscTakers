@@ -106,10 +106,30 @@ module cva6_mmu_sv32
 
   logic                               itlb_req;
 
+//  Gweltaz  
+//  //lsu_exception_o pipline register
+  exception_t lsu_exception_o_piped;
+//  //end lsu_exception_o pipline register
+
 
   // Assignments
   assign itlb_lu_access = icache_areq_i.fetch_req;
   assign dtlb_lu_access = lsu_req_i;
+  
+//Gweltaz
+//Add pipelining in the MMU  
+  
+    shift_reg #(
+      .dtype(logic [$bits(lsu_exception_o) - 1:0]),
+      .Depth(cva6_config_pkg::CVA6ConfigNrLoadPipeRegs)
+  ) i_pipe_reg (
+      .clk_i,
+      .rst_ni,
+      .d_i(lsu_exception_o_piped),
+      .d_o(lsu_exception_o)
+  );
+
+//End pipelining
 
 
   cva6_tlb_sv32 #(
@@ -415,7 +435,7 @@ module cva6_mmu_sv32
       lsu_dtlb_ppn_o = lsu_vaddr_n[riscv::PPNW-1:0];
     end
     lsu_valid_o = lsu_req_q;
-    lsu_exception_o = misaligned_ex_q;
+    lsu_exception_o_piped = misaligned_ex_q;
     pmp_access_type = lsu_is_store_q ? riscv::ACCESS_WRITE : riscv::ACCESS_READ;
 
     // mute misaligned exceptions if there is no request otherwise they will throw accidental exceptions
@@ -451,14 +471,14 @@ module cva6_mmu_sv32
           // check if the page is write-able and we are not violating privileges
           // also check if the dirty flag is set
           if (!dtlb_pte_q.w || daccess_err || !dtlb_pte_q.d) begin
-            lsu_exception_o = {
+            lsu_exception_o_piped = {
               riscv::STORE_PAGE_FAULT,
               {{riscv::XLEN - riscv::VLEN{lsu_vaddr_q[riscv::VLEN-1]}}, lsu_vaddr_q},
               1'b1
             };  //to check on wave
             // Check if any PMPs are violated
           end else if (!pmp_data_allow) begin
-            lsu_exception_o = {
+            lsu_exception_o_piped = {
               riscv::ST_ACCESS_FAULT, lsu_paddr_o[riscv::PLEN-1:2], 1'b1
             };  //only 32 bits on 34b of lsu_paddr_o are returned.
           end
@@ -467,14 +487,14 @@ module cva6_mmu_sv32
         end else begin
           // check for sufficient access privileges - throw a page fault if necessary
           if (daccess_err) begin
-            lsu_exception_o = {
+            lsu_exception_o_piped = {
               riscv::LOAD_PAGE_FAULT,
               {{riscv::XLEN - riscv::VLEN{lsu_vaddr_q[riscv::VLEN-1]}}, lsu_vaddr_q},
               1'b1
             };
             // Check if any PMPs are violated
           end else if (!pmp_data_allow) begin
-            lsu_exception_o = {
+            lsu_exception_o_piped = {
               riscv::LD_ACCESS_FAULT, lsu_paddr_o[riscv::PLEN-1:2], 1'b1
             };  //only 32 bits on 34b of lsu_paddr_o are returned.
           end
@@ -492,13 +512,13 @@ module cva6_mmu_sv32
           lsu_valid_o = 1'b1;
           // the page table walker can only throw page faults
           if (lsu_is_store_q) begin
-            lsu_exception_o = {
+            lsu_exception_o_piped = {
               riscv::STORE_PAGE_FAULT,
               {{riscv::XLEN - riscv::VLEN{lsu_vaddr_q[riscv::VLEN-1]}}, update_vaddr},
               1'b1
             };
           end else begin
-            lsu_exception_o = {
+            lsu_exception_o_piped = {
               riscv::LOAD_PAGE_FAULT,
               {{riscv::XLEN - riscv::VLEN{lsu_vaddr_q[riscv::VLEN-1]}}, update_vaddr},
               1'b1
@@ -510,15 +530,15 @@ module cva6_mmu_sv32
           // an error makes the translation valid
           lsu_valid_o = 1'b1;
           // the page table walker can only throw page faults
-          lsu_exception_o = {riscv::LD_ACCESS_FAULT, ptw_bad_paddr[riscv::PLEN-1:2], 1'b1};
+          lsu_exception_o_piped = {riscv::LD_ACCESS_FAULT, ptw_bad_paddr[riscv::PLEN-1:2], 1'b1};
         end
       end
     end  // If translation is not enabled, check the paddr immediately against PMPs
     else if (lsu_req_q && !misaligned_ex_q.valid && !pmp_data_allow) begin
       if (lsu_is_store_q) begin
-        lsu_exception_o = {riscv::ST_ACCESS_FAULT, lsu_paddr_o[riscv::PLEN-1:2], 1'b1};
+        lsu_exception_o_piped = {riscv::ST_ACCESS_FAULT, lsu_paddr_o[riscv::PLEN-1:2], 1'b1};
       end else begin
-        lsu_exception_o = {riscv::LD_ACCESS_FAULT, lsu_paddr_o[riscv::PLEN-1:2], 1'b1};
+        lsu_exception_o_piped = {riscv::LD_ACCESS_FAULT, lsu_paddr_o[riscv::PLEN-1:2], 1'b1};
       end
     end
   end
@@ -558,6 +578,11 @@ module cva6_mmu_sv32
       dtlb_hit_q      <= dtlb_hit_n;
       lsu_is_store_q  <= lsu_is_store_n;
       dtlb_is_4M_q    <= dtlb_is_4M_n;
+      
+      //Pipline lsu_exception_o
+      lsu_exception_o = lsu_exception_o_piped;
+      //End pipline lsu_exception_o
+      
     end
   end
 endmodule
