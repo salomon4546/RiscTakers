@@ -579,9 +579,7 @@ module cva6_mmu_sv32
       lsu_is_store_q  <= lsu_is_store_n;
       dtlb_is_4M_q    <= dtlb_is_4M_n;
       
-      //Pipline lsu_exception_o
-      lsu_exception_o = lsu_exception_o_piped;
-      //End pipline lsu_exception_o
+
       
     end
   end

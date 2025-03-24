@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Mar 24 13:36:05 2025
+# Process ID: 699217
+# Current directory: /home/imtuser/RISC_takers/60M_17_03/RiscTakers
+# Command line: vivado
+# Log file: /home/imtuser/RISC_takers/60M_17_03/RiscTakers/vivado.log
+# Journal file: /home/imtuser/RISC_takers/60M_17_03/RiscTakers/vivado.jou
+# Running On        :EQI07359
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.1 LTS
+# Processor Detail  :Intel(R) Core(TM) i3-4150 CPU @ 3.50GHz
+# CPU Frequency     :3491.417 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :8242 MB
+# Swap memory       :34359 MB
+# Total Virtual     :42601 MB
+# Available Virtual :39141 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/imtuser/RISC_takers/60M_17_03/RiscTakers/corev_apu/fpga/cva6_fpga.xpr
+open_run impl_1
+update_compile_order -fileset sources_1

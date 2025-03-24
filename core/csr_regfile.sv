@@ -155,6 +155,21 @@ module csr_regfile
   logic [MHPMCounterNum+3-1:0] mcountinhibit_d, mcountinhibit_q;
   logic [3:0] index;
 
+
+  logic single_step_piped;       //Thibaud adding pipeline to csr_regfile
+  
+  
+      shift_reg #(
+      .dtype(logic [$bits(single_step_o) - 1:0]),
+      .Depth(cva6_config_pkg::CVA6ConfigNrLoadPipeRegs)
+  ) i_pipe_reg (
+      .clk_i,
+      .rst_ni,
+      .d_i(dcsr_q.step),
+      .d_o(single_step_piped)
+  );
+
+
   localparam riscv::xlen_t IsaCode = (riscv::XLEN'(CVA6Cfg.RVA) <<  0)                // A - Atomic Instructions extension
   | (riscv::XLEN'(CVA6Cfg.RVC) << 2)  // C - Compressed extension
   | (riscv::XLEN'(CVA6Cfg.RVD) << 3)  // D - Double precsision floating-point extension
@@ -1099,7 +1114,7 @@ module csr_regfile
       end
 
       // single step enable and we just retired an instruction
-      if (dcsr_q.step && commit_ack_i[0]) begin
+      if (single_step_piped && commit_ack_i[0]) begin
         dcsr_d.prv = priv_lvl_o;
         // valid CTRL flow change
         if (commit_instr_i[0].fu == CTRL_FLOW) begin
@@ -1238,7 +1253,7 @@ module csr_regfile
   assign irq_ctrl_o.mideleg = mideleg_q;
   assign irq_ctrl_o.global_enable = (~debug_mode_q)
       // interrupts are enabled during single step or we are not stepping
-      & (~dcsr_q.step | dcsr_q.stepie)
+      & (~single_step_piped | dcsr_q.stepie)
                                     & ((mstatus_q.mie & (priv_lvl_o == riscv::PRIV_LVL_M))
                                     | (priv_lvl_o != riscv::PRIV_LVL_M));
 
@@ -1396,8 +1411,11 @@ module csr_regfile
   // determine if mprv needs to be considered if in debug mode
   assign mprv            = (debug_mode_q && !dcsr_q.mprven) ? 1'b0 : mstatus_q.mprv;
   assign debug_mode_o    = debug_mode_q;
-  assign single_step_o   = dcsr_q.step;
+  assign single_step_o   = single_step_piped;
   assign mcountinhibit_o = {{29 - MHPMCounterNum{1'b0}}, mcountinhibit_q};
+
+
+  
 
   // sequential process
   always_ff @(posedge clk_i or negedge rst_ni) begin

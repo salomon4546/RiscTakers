@@ -751,7 +751,7 @@ begin
                                       DIVIDER     => iBaudgenDiv,
                                       BAUDTICK    => iBaudtick16x
                                      );
-    UART_BG2: slib_clock_div generic map (RATIO => 8)
+    UART_BG2: slib_clock_div generic map (RATIO => 12)
                              port map    (CLK   => CLK,
                                           RST   => iRST,
                                           CE    => iBaudtick16x,

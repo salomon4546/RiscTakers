@@ -1,0 +1,321 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 699217
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Mar 24 13:36:22 CET 2025
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 6.8.0-52-generic
+OS Architecture: amd64
+Available processors (cores): 4
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: 1
+Screen size: 1680x1050
+Local screen bounds: x = 74, y = 27, width = 1606, height = 1023
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	imtuser
+User home directory: /home/imtuser
+User working directory: /home/imtuser/RISC_takers/60M_17_03/RiscTakers
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado
+HDI_APPROOT: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1
+RDI_DATADIR: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/data
+RDI_BINDIR: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/bin
+
+Vivado preferences file: /home/imtuser/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/imtuser/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/imtuser/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/imtuser/RISC_takers/60M_17_03/RiscTakers/vivado.log
+Vivado journal file: 	/home/imtuser/RISC_takers/60M_17_03/RiscTakers/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-699217-EQI07359
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1
+RDI_BASEROOT: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado
+RDI_BINROOT: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/data
+RDI_INSTALLROOT: /home/imtuser/RISC_takers/VIVADO/vivado_install
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/lib/lnx64.o/Ubuntu/22:/home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/lib/lnx64.o/Ubuntu:/home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/imtuser/RISC_takers/60M_17_03/RiscTakers:EQI07359_1742819764_699176
+RDI_SHARED_DATA: /home/imtuser/RISC_takers/VIVADO/vivado_install/SharedData/2024.1/data
+RDI_TPS_ROOT: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/ids_lite/ISE
+XILINX_DSP: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1
+XILINX_VIVADO: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1
+XILINX_VIVADO_HLS: /home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,401 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Message: INFO: [Common 17-1460] Use of init.tcl in /home/imtuser/.Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl  
+// Tcl Message: Sourcing tcl script '/home/imtuser/.Xilinx/Vivado/init.tcl' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,435 MB. GUI used memory: 66 MB. Current time: 3/24/25, 1:36:23 PM CET
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/imtuser/RISC_takers/60M_17_03/RiscTakers/corev_apu/fpga/cva6_fpga.xpr", 0); // b.c (PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS)
+// Opening Vivado Project: /home/imtuser/RISC_takers/60M_17_03/RiscTakers/corev_apu/fpga/cva6_fpga.xpr. Version: Vivado v2024.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project /home/imtuser/RISC_takers/60M_17_03/RiscTakers/corev_apu/fpga/cva6_fpga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 133 MB (+136551kb) [00:00:30]
+// [Engine Memory]: 1,814 MB (+1750477kb) [00:00:30]
+// [GUI Memory]: 144 MB (+4947kb) [00:00:32]
+// [Engine Memory]: 1,950 MB (+47273kb) [00:00:32]
+// [GUI Memory]: 159 MB (+8156kb) [00:00:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  3731 ms.
+// Tcl Message: open_project /home/imtuser/RISC_takers/60M_17_03/RiscTakers/corev_apu/fpga/cva6_fpga.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/imtuser/RISC_takers/60M_17_03/RiscTakers/corev_apu/fpga/cva6_fpga.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/imtuser/RISC_takers/VIVADO/vivado_install/Vivado/2024.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 8058.684 ; gain = 560.305 ; free physical = 3424 ; free virtual = 36242 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,991 MB. GUI used memory: 84 MB. Current time: 3/24/25, 1:36:45 PM CET
+// Project name: cva6_fpga; location: /home/imtuser/RISC_takers/60M_17_03/RiscTakers/corev_apu/fpga; part: xc7z020clg400-1
+// Elapsed time: 21 seconds
+dismissDialog("Open Project"); // bj (Open Project Progress)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; write_bitstream Complete! ; -0.689897894859314 ; -295.227783203125 ; 0.024302031844854355 ; 0.0 ;  ; 0.0 ; 0.30736786127090454 ; 0 ; 2 CW, 51 Warn ;  ;  ; 24154 ; 14607 ; 66.0 ; 0 ; 4 ; Mon Mar 24 13:21:14 CET 2025 ; 00:14:04 ; Vivado Implementation Defaults* (Vivado Implementation 2024) ; Vivado Implementation Default Reports (Vivado Implementation 2024) ; xc7z020clg400-1 ; EQI07359 ; Default settings for Implementation.", 1, "100", 3, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.8s
+// WARNING: HEventQueue.dispatchEvent() is taking  1132 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; write_bitstream Complete! ; -0.689897894859314 ; -295.227783203125 ; 0.024302031844854355 ; 0.0 ;  ; 0.0 ; 0.30736786127090454 ; 0 ; 2 CW, 51 Warn ;  ;  ; 24154 ; 14607 ; 66.0 ; 0 ; 4 ; Mon Mar 24 13:21:14 CET 2025 ; 00:14:04 ; Vivado Implementation Defaults* (Vivado Implementation 2024) ; Vivado Implementation Default Reports (Vivado Implementation 2024) ; xc7z020clg400-1 ; EQI07359 ; Default settings for Implementation.", 1, "100", 3, false, false, false, false, false, true); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Double Click
+// [Engine Memory]: 2,104 MB (+59638kb) [00:00:41]
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,678 MB. GUI used memory: 88 MB. Current time: 3/24/25, 1:37:03 PM CET
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,227 MB. GUI used memory: 87 MB. Current time: 3/24/25, 1:37:11 PM CET
+// [Engine Memory]: 3,219 MB (+1058549kb) [00:01:01]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/imtuser/RISC_takers/60M_17_03/RiscTakers/./.Xil/Vivado-699217-EQI07359/xc7z020_detail.xgd_28A386E2 elapsed time: 1.5s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.7s
+// [GUI Memory]: 176 MB (+9236kb) [00:01:04]
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  6086 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.42 . Memory (MB): peak = 8538.113 ; gain = 0.000 ; free physical = 2972 ; free virtual = 35788 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2081 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 8658.895 ; gain = 7.250 ; free physical = 2860 ; free virtual = 35676 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 9288.383 ; gain = 0.000 ; free physical = 2287 ; free virtual = 35113 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9288.383 ; gain = 0.000 ; free physical = 2287 ; free virtual = 35113 Read PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 9288.383 ; gain = 0.000 ; free physical = 2258 ; free virtual = 35083 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9288.383 ; gain = 0.000 ; free physical = 2258 ; free virtual = 35083 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.43 . Memory (MB): peak = 9305.270 ; gain = 16.887 ; free physical = 2242 ; free virtual = 35067 Read Physdb Files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 9305.270 ; gain = 16.887 ; free physical = 2242 ; free virtual = 35067 
+// Tcl Message: Restored from archive | CPU: 2.960000 secs | Memory: 54.346664 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 9305.270 ; gain = 16.887 ; free physical = 2242 ; free virtual = 35067 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 9305.270 ; gain = 0.000 ; free physical = 2242 ; free virtual = 35067 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 236 instances were transformed.   RAM16X1D => RAM32X1D (RAMD32(x2)): 6 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 206 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 18 instances   RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances   RAM64X1S => RAM64X1S (RAMS64E): 2 instances  
+// [Engine Memory]: 3,394 MB (+14874kb) [00:01:08]
+// TclEventType: CURR_DESIGN_SET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,428 MB. GUI used memory: 116 MB. Current time: 3/24/25, 1:37:19 PM CET
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:01:04 ; elapsed = 00:00:29 . Memory (MB): peak = 9483.355 ; gain = 1368.215 ; free physical = 2097 ; free virtual = 34939 
+// ExpRunCommands.openImplResults elapsed time: 31.8s
+// TclEventType: DRC_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 8.1s
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.0
+// [GUI Memory]: 189 MB (+4754kb) [00:01:12]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 199 MB (+653kb) [00:01:13]
+// [Engine Memory]: 3,981 MB (+437458kb) [00:01:13]
+// [GUI Memory]: 211 MB (+1947kb) [00:01:14]
+// [GUI Memory]: 222 MB (+704kb) [00:01:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3398 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1777 ms.
+// [Engine Memory]: 4,294 MB (+119386kb) [00:01:18]
+// Elapsed Time for: 'x': 39s
+// Elapsed time: 39 seconds
+dismissDialog("Open Implemented Design"); // bj (Open Implemented Design Progress)
+// [GUI Memory]: 233 MB (+66kb) [00:01:19]
+// Elapsed Time for: 'L.f': 48s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// Elapsed Time for: 'L.f': 50s
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.690 ns"); // g (PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.6s
+// Elapsed Time for: 'L.f': 53s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "105", 3); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+// [GUI Memory]: 246 MB (+402kb) [00:01:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,305 MB. GUI used memory: 163 MB. Current time: 3/24/25, 1:37:37 PM CET
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "105", 3, false, false, false, false, true); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE) - Double Click
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // j (RDIResource.HPopupTitle_CLOSE)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=3, routed) ; 0.341 ; 6.595 ;  ;  ;  ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/npc_q_reg[0]", 19, "i_ariane/i_cva6/issue_stage_i/i_scoreboard/npc_q_reg[0]", 6); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 259 MB (+979kb) [00:01:40]
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "Path 1", 0); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectButton(PAResourceCommand.PACommandNames_SCHEMATIC, "run_schematic"); // B (PAResourceCommand.PACommandNames_SCHEMATIC, run_schematic)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// HMemoryUtils.trashcanNow. Engine heap size: 4,499 MB. GUI used memory: 165 MB. Current time: 3/24/25, 1:37:53 PM CET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 28 seconds
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDCE (Prop_fdce_C_Q) ; (f) 0.456 ; -0.512 ; Site: SLICE_X59Y14 ; Q ; csr_reg_q_reg[csr_address][2] (FDCE) ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/Q", 0, "csr_reg_q_reg[csr_address][2] (FDCE)", 5); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=105, routed) ; 0.761 ; 0.248 ;  ;  ;  ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/Q[2]", 1, (String) null, 5); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "LUT2 (Prop_lut2_I1_O) ; (f) 0.124 ; 0.372 ; Site: SLICE_X59Y13 ; O ; i___101_i_28 (LUT2) ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_28/O", 2, "i___101_i_28 (LUT2)", 5); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=1, routed) ; 0.790 ; 1.162 ;  ;  ;  ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_28_n_0", 3, (String) null, 5); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "LUT6 (Prop_lut6_I1_O) ; (r) 0.124 ; 1.286 ; Site: SLICE_X61Y13 ; O ; i___101_i_21 (LUT6) ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_21/O", 4, "i___101_i_21 (LUT6)", 5); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 272 MB (+700kb) [00:02:21]
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "LUT6 (Prop_lut6_I3_O) ; (r) 0.124 ; 11.101 ; Site: SLICE_X36Y14 ; O ; asid_to_be_flushed[0]_i_21 (LUT6) ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/asid_to_be_flushed[0]_i_21/O", 36, "asid_to_be_flushed[0]_i_21 (LUT6)", 5); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=5, routed) ; 0.343 ; 10.977 ;  ;  ;  ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/rs2_fwd_req[3]", 35, "i_ariane/i_cva6/issue_stage_i/i_scoreboard/rs2_fwd_req[3]", 6); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 287 MB (+1002kb) [00:02:27]
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Arrival Time ;  ; 16.037 ;  ;  ;  ; ", 51, "16.037", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 302 MB (+619kb) [00:02:51]
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 318 MB (+788kb) [00:02:58]
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Arrival Time ;  ; 16.037 ;  ;  ;  ; ", 26, "16.037", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// Elapsed time: 30 seconds
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=1, routed) ; 0.818 ; 2.528 ;  ;  ;  ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_10_n_0", 27, (String) null, 5); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=38, routed) ; 0.968 ; 16.037 ;  ;  ;  ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][0]_0[0]", 25, "16.037", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Arrival Time ;  ; 16.037 ;  ;  ;  ; ", 26, "16.037", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 334 MB (+21kb) [00:03:32]
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.690 ns"); // g (PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK)
+// Elapsed time: 26 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "20.181847", 9); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "20.181847", 9, false, false, false, false, true); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE) - Double Click
+// [GUI Memory]: 351 MB (+168kb) [00:04:22]
+// Elapsed time: 56 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets i_ariane/i_cva6/issue_stage_i/scause_q[0]_i_2]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// PAPropertyPanels.initPanels (scause_q[0]_i_2) elapsed time: 0.2s
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "LUT2 (Prop_lut2_I1_O) ; (f) 0.124 ; 0.372 ; Site: SLICE_X59Y13 ; O ; i___101_i_28 (LUT2) ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_28/O", 3, "0.372", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=1, routed) ; 0.444 ; 10.510 ;  ;  ;  ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/asid_to_be_flushed[0]_i_82_n_0", 9, "10.510", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=1, routed) ; 0.299 ; 1.585 ;  ;  ;  ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_21_n_0", 6, "1.585", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, null, -1, null, -1); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, null, -1, null, -1); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, null, -1, null, -1); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, null, -1, null, -1); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, null, -1, null, -1); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, null, -1, null, -1); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_8]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane/i_cva6/issue_stage_i/i_scoreboard/asid_to_be_flushed[0]_i_82]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=1, routed) ; 0.299 ; 1.585 ;  ;  ;  ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_21_n_0", 6, "1.585", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "LUT6 (Prop_lut6_I5_O) ; (r) 0.124 ; 1.709 ; Site: SLICE_X59Y13 ; O ; i___101_i_10 (LUT6) ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/i___101_i_10/O", 7, "1.709", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.66 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[3][sbe][ex][tval][17]/CE ; 17.004517 ; 3.4319994 ; 13.572513 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 2, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+// [GUI Memory]: 369 MB (+458kb) [00:05:31]
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][22]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 1, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][22]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 1, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.66 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[3][sbe][ex][tval][17]/CE ; 17.004517 ; 3.4319994 ; 13.572513 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 2, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][22]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 1, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.69 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[1][sbe][ex][tval][10]/CE ; 17.00541 ; 3.4319994 ; 13.573403 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 0, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDCE (Prop_fdce_C_Q) ; (f) 0.456 ; -0.512 ; Site: SLICE_X59Y14 ; Q ; csr_reg_q_reg[csr_address][2] (FDCE) ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/Q", 0, "-0.512", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 387 MB (+209kb) [00:05:47]
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=105, routed) ; 0.761 ; 0.248 ;  ;  ;  ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/Q[2]", 1, "0.248", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 408 MB (+1022kb) [00:05:54]
+// Elapsed time: 10 seconds
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Location", 3); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 429 MB (+567kb) [00:06:04]
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 451 MB (+527kb) [00:06:12]
+// Elapsed time: 11 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.66 ; 24 ; 105 ; i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C ; i_ariane/i_cva6/issue_stage_i/i_scoreboard/mem_q_reg[3][sbe][ex][tval][17]/CE ; 17.004517 ; 3.4319994 ; 13.572513 ; 16.666664 ; clk_out1_xlnx_clk_gen ; clk_out1_xlnx_clk_gen ;  ; 0.082152195", 2, "i_ariane/i_cva6/ex_stage_i/csr_buffer_i/csr_reg_q_reg[csr_address][2]/C", 4); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+// Elapsed time: 10 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets i_ariane/i_cva6/flush_ctrl_id]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane/i_cva6/ex_stage_i/i_mult/i_div/mem_q[0][sbe][result][31]_i_21]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 11 seconds
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+// [GUI Memory]: 473 MB (+67kb) [00:06:48]
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+selectTableHeader(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path (ns)", 2); // p (PAResourceOtoP.PathReportTableView_DESCRIPTION)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane/i_cva6/ex_stage_i/i_mult/i_div/mem_q[0][sbe][result][31]_i_21]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 26 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cva6_zybo_z7_20 (cva6_zybo_z7_20.sv)]", 5); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
