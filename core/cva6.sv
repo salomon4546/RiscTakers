@@ -383,16 +383,18 @@ module cva6
   // Performance Counters <-> *
   // ----------------------------
   logic [11:0] addr_csr_perf;
-  riscv::xlen_t data_csr_perf, data_perf_csr;
+  riscv::xlen_t data_csr_perf, data_perf_csr, data_perf_csr_piped;
   logic                                                                we_csr_perf;
 
   logic                                                                icache_flush_ctrl_cache;
   logic                                                                itlb_miss_ex_perf;
   logic                                                                dtlb_miss_ex_perf;
   logic                                                                dcache_miss_cache_perf;
+  logic                                                                dcache_miss_cache_perf_piped;
   logic                                                                icache_miss_cache_perf;
+  logic                                                                icache_miss_cache_perf_piped;
   logic          [                 NumPorts-1:0][DCACHE_SET_ASSOC-1:0] miss_vld_bits;
-  logic                                                                stall_issue;
+  logic                                                                stall_issue, stall_issue_piped;
   // --------------
   // CTRL <-> *
   // --------------
@@ -444,6 +446,24 @@ module cva6
   logic          [                         63:0]                       inval_addr;
   logic                                                                inval_valid;
   logic                                                                inval_ready;
+
+
+//Gweltaz
+  always_ff @(posedge clk_i or negedge rst_ni) begin
+      if (~rst_ni) begin
+          dcache_miss_cache_perf_piped <= '0;
+          icache_miss_cache_perf_piped <= '0;
+          data_perf_csr_piped <= '0;
+          stall_issue_piped <= '0;
+      end else begin
+          dcache_miss_cache_perf_piped <= dcache_miss_cache_perf;
+          icache_miss_cache_perf_piped <= icache_miss_cache_perf;
+          data_perf_csr_piped <= data_perf_csr;
+          stall_issue_piped <= stall_issue;
+      end
+  end
+    
+    
 
   // --------------
   // Frontend
@@ -854,7 +874,7 @@ module cva6
       .acc_cons_en_o         (acc_cons_en_csr),
       .perf_addr_o           (addr_csr_perf),
       .perf_data_o           (data_csr_perf),
-      .perf_data_i           (data_perf_csr),
+      .perf_data_i           (data_perf_csr_piped),
       .perf_we_o             (we_csr_perf),
       .pmpcfg_o              (pmpcfg),
       .pmpaddr_o             (pmpaddr),
@@ -884,8 +904,8 @@ module cva6
         .commit_instr_i(commit_instr_id_commit),
         .commit_ack_i  (commit_ack),
 
-        .l1_icache_miss_i   (icache_miss_cache_perf),
-        .l1_dcache_miss_i   (dcache_miss_cache_perf),
+        .l1_icache_miss_i   (icache_miss_cache_perf_piped),
+        .l1_dcache_miss_i   (dcache_miss_cache_perf_piped),
         .itlb_miss_i        (itlb_miss_ex_perf),
         .dtlb_miss_i        (dtlb_miss_ex_perf),
         .sb_full_i          (sb_full),
@@ -898,7 +918,7 @@ module cva6
         .l1_dcache_access_i (dcache_req_ports_ex_cache),
         .miss_vld_bits_i    (miss_vld_bits),
         .i_tlb_flush_i      (flush_tlb_ctrl_ex),
-        .stall_issue_i      (stall_issue),
+        .stall_issue_i      (stall_issue_piped),
         .mcountinhibit_i    (mcountinhibit_csr_perf)
     );
   end : gen_perf_counter

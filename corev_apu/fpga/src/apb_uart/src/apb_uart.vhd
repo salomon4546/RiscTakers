@@ -184,7 +184,7 @@ architecture rtl of apb_uart is
     -- Clock enable generation
     component slib_clock_div is
     generic (
-        RATIO       : integer := 8                              -- Clock divider ratio
+        RATIO       : integer := 10                              -- Clock divider ratio
     );
     port (
         CLK         : in std_logic;                             -- Clock
